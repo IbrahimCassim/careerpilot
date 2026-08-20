@@ -1,0 +1,8 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+  <ItemGroup>
+    <ProjectReference Include="../CareerPilot.Application/CareerPilot.Application.csproj" />
+    <ProjectReference Include="../CareerPilot.Infrastructure/CareerPilot.Infrastructure.csproj" />
+    <PackageReference Include="Serilog.AspNetCore" />
+    <PackageReference Include="Serilog.Sinks.Console" />
+  </ItemGroup>
+</Project>

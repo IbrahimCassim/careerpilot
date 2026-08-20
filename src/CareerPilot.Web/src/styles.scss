@@ -1,0 +1,20 @@
+@use '@angular/material' as mat;
+
+html { @include mat.theme((color: (primary: mat.$azure-palette, tertiary: mat.$orange-palette), typography: Roboto, density: 0)); }
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+body { margin: 0; background: #f5f7fb; color: #172033; font-family: Inter, Roboto, "Helvetica Neue", sans-serif; }
+a { color: inherit; }
+.page { max-width: 1440px; margin: 0 auto; padding: 28px; }
+.page-header { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 24px; }
+.page-header h1 { margin: 0; font-size: 28px; letter-spacing: -0.03em; }
+.muted { color: #68748a; }
+.grid { display: grid; gap: 18px; }
+.card { background: #fff; border: 1px solid #e6eaf1; border-radius: 14px; padding: 20px; box-shadow: 0 5px 18px rgb(21 35 62 / 5%); }
+.empty { padding: 48px 24px; text-align: center; color: #68748a; }
+.score { display: inline-grid; place-items: center; min-width: 46px; height: 32px; padding: 0 10px; border-radius: 999px; font-weight: 700; background: #e8f5ee; color: #12613b; }
+.score.low { background: #fff0e8; color: #9b3d14; }
+.status { text-transform: capitalize; font-size: 12px; font-weight: 700; padding: 5px 9px; border-radius: 999px; background: #edf0f6; }
+.toolbar { display: flex; gap: 12px; flex-wrap: wrap; align-items: center; }
+.full-width { width: 100%; }
+@media (max-width: 800px) { .page { padding: 18px; } .page-header { align-items: flex-start; flex-direction: column; } }

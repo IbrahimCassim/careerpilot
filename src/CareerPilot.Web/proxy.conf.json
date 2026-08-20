@@ -1,0 +1,4 @@
+{
+  "/api": { "target": "https://localhost:7147", "secure": false },
+  "/health": { "target": "https://localhost:7147", "secure": false }
+}
